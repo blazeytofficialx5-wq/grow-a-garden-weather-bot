@@ -2,8 +2,9 @@ import discord
 import requests
 import asyncio
 import winsound
+import os
 
-TOKEN = ""
+TOKEN = os.getenv("BOT_TOKEN")
 USER_ID = 1479770827061854298
 
 intents = discord.Intents.default()
