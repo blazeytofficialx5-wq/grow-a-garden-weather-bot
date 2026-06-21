@@ -1,7 +1,6 @@
 import discord
 import requests
 import asyncio
-import winsound
 import os
 
 TOKEN = os.getenv("BOT_TOKEN")
@@ -54,10 +53,6 @@ async def on_ready():
 
                     print(message)
 
-                    # Triple beep alarm
-                    winsound.Beep(2000, 500)
-                    winsound.Beep(2000, 500)
-                    winsound.Beep(2000, 500)
 
                     try:
                         await user.send(message)
